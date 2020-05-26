@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDO List</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="add-task">
+            <h2>Task List</h2>
+            <form id="taskInput">
+                <div class="form-group">
+                    <label for="newTask">New Task</label>
+                    <input type="text" name="newTask" id="new-task">
+                </div>
+                <input type="submit" value="ADD TASK">
+            </form>
+        </div>
+        <div class="tasks-list">
+            <h2>Tasks</h2>
+            <ul id="list">
+                <li>
+                </li>
+            </ul>
+            <div class="filter">
+                <h3>Filter Tasks</h3>
+                <div class="filter-btns">
+                    <button id="all">All</button>
+                    <button id="active">Active</button>
+                    <button id="completed">Completed</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+div{
+    display: block;
+}
+
+.container{
+    width: 60vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+}
+
+.add-task{
+    border-bottom: 1px solid lightgray;
+    padding: 30px 20px;
+}
+
+.add-task h2{
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.add-task form .form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.add-task .form-group label{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #24a49c;
+}
+
+.add-task .form-group input{
+    border: none;
+    outline: none;
+    height: 25px;
+    border-bottom: 3px solid #24a49c;
+    margin-bottom: 20px;
+}
+
+.add-task input[type="submit"]{
+    border: none;
+    background: #24a49c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.tasks-list{
+    padding: 30px 20px;
+}
+
+.tasks-list h2{
+    margin-bottom: 20px;
+}
+.tasks-list ul{
+    padding-left: 40px;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+.tasks-list ul li{
+    padding: 10px 0px;
+    width: 100%;
+}
+
+li span{
+    padding: 5px 10px;
+}
+
+li button{
+    background: none;
+    border: none;
+    background-color: #000;
+    color: white;
+    padding: 5px 10px;
+    float: right;
+    display: none;
+}
+
+li button:hover{
+    cursor: pointer;
+}
+
+li:hover button{
+    display: block;
+}
+
+.tasks-list .filter{
+    display: flex;
+}
+.tasks-list .filter h3{
+    flex: 1;
+}
+
+.tasks-list .filter .filter-btns{
+    flex: 1;
+}
+
+.tasks-list .filter .filter-btns .active{
+    background: #24a49c;
+    color: #000;
+} 
+
+.tasks-list .filter .filter-btns button{
+    background-color: #000;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+}
